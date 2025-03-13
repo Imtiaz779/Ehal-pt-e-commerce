@@ -1,3 +1,15 @@
 @import "tailwindcss";
 
 @plugin "daisyui";
+
+
+
+@theme {
+    
+   
+    
+    --breakpoint-sm: 30rem;
+    --breakpoint-md: 48rem;
+    --breakpoint-lg: 64rem;
+
+  }

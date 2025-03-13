@@ -58,6 +58,10 @@ const SlidingProduct = () => {
           slidesPerView: 2,
           spaceBetween: 20,
         },
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
       }}
     >
       {products.map((product) => (

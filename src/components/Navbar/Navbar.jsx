@@ -5,6 +5,8 @@ import { LiaCartPlusSolid } from "react-icons/lia";
 import { Link, NavLink } from "react-router-dom";
 import { FaAngleDown } from "react-icons/fa6";
 import Logo from "@/assets/logo/birdlogo.webp";
+
+
 const Navbar = () => {
   const menuItems = [
     { name: "Eid Collection", path: "/" },
@@ -30,12 +32,12 @@ const Navbar = () => {
     <div className="fixed top-0 left-0 w-full bg-black backdrop-blur-lg text-white z-50 shadow-2xl rounded-b-box">
 
 
-      <div className=" container mx-auto px-4 py-3 flex justify-between items-center">
+      <div className=" container mx-auto px-2 py-3 flex justify-between items-center">
 
 
         {/* Logo & Mobile Menu */}
-        <div className="flex items-center gap-4">
-          <div className="dropdown lg:hidden">
+        <div className="flex items-center w-full lg:w-auto">
+          <div className="dropdown  lg:hidden xl:hidden">
             <label tabIndex={0} className="btn btn-ghost">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -97,10 +99,11 @@ const Navbar = () => {
         </div>
 
         {/* Icons Section */}
-        <div className="flex items-center space-x-3">
-          <FaRegHeart className="hover:scale-120 hover:text-cyan-500 transition cursor-pointer text-3xl" />
-          <FaUserCircle className="hover:scale-120 hover:text-cyan-500 transition cursor-pointer text-3xl" />
-          <LiaCartPlusSolid className="hover:scale-120 hover:text-cyan-500 transition cursor-pointer text-4xl" />
+       <div>
+       <div className="flex items-center space-x-2">
+          <FaRegHeart className="text-sm md:text-2xl hover:scale-120 hover:text-cyan-500 transition cursor-pointer" />
+          <FaUserCircle className="hover:scale-120 hover:text-cyan-500 transition cursor-pointer text-sm md:text-xl" />
+          <LiaCartPlusSolid className="hover:scale-120 hover:text-cyan-500 transition cursor-pointer text-sm md:text-xl" />
 
           {/* Festival Offer */}
           <div className="hidden lg:flex flex-col items-center ">
@@ -108,6 +111,7 @@ const Navbar = () => {
             <span className="text-sm ">Festival Offer</span>
           </div>
         </div>
+       </div>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ import img4 from "@/assets/Products/bag.jpg";
 
 const Hero = () => {
   return (
-    <div className="mt-16 lg:20 ">
+    <div className="mt-16 lg:mt-18 ">
       {/*  Hero Banner */}
       <div
         className="relative w-full h-[350px] lg:h-[550px] bg-cover bg-center flex items-center justify-center"
