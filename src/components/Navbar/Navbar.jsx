@@ -29,15 +29,15 @@ const Navbar = () => {
   );
 
   return (
-    <div className="fixed top-0 left-0 w-full bg-black backdrop-blur-lg text-white z-50 shadow-2xl rounded-b-box">
+    <div className="fixed top-0 left-0 w-full bg-black backdrop-blur-lg text-white z-50 shadow-2xl ">
 
 
-      <div className=" container mx-auto px-2 py-3 flex justify-between items-center">
+      <div className=" px-2 py-3 flex justify-between items-center">
 
 
         {/* Logo & Mobile Menu */}
-        <div className="flex items-center w-full lg:w-auto">
-          <div className="dropdown  lg:hidden xl:hidden">
+        <div className="flex items-center">
+          <div className="dropdown  lg:hidden">
             <label tabIndex={0} className="btn btn-ghost">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +99,7 @@ const Navbar = () => {
         </div>
 
         {/* Icons Section */}
-       <div>
+       
        <div className="flex items-center space-x-2">
           <FaRegHeart className="text-sm md:text-2xl hover:scale-120 hover:text-cyan-500 transition cursor-pointer" />
           <FaUserCircle className="hover:scale-120 hover:text-cyan-500 transition cursor-pointer text-sm md:text-xl" />
@@ -111,7 +111,7 @@ const Navbar = () => {
             <span className="text-sm ">Festival Offer</span>
           </div>
         </div>
-       </div>
+       
       </div>
     </div>
   );
