@@ -18,7 +18,7 @@ export const router = createBrowserRouter([
 
 const App = () => {
   return (
-    <div>
+    <div className="bg-gray-100">
       <RouterProvider router={router} />
     </div>
   );

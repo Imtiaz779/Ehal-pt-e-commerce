@@ -70,7 +70,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="mt-8 border-t border-gray-700 pt-6 text-center text-sm">
+      <div className="mt-8 border-t border-cyan-300 pt-6 text-center text-sm">
         <p>
           &copy;{new Date().getFullYear()}
           <span className="text-red-500">Ehal.pt</span>. All rights reserved.
