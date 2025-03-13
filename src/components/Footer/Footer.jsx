@@ -12,8 +12,8 @@ const Footer = () => {
     <footer className="bg-gray-100 text-black py-10 mt-10">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3  gap-10">
         {/* Logo */}
-        <div className="text-center ">
-          <img src={Logo} alt="Ehal.pt Logo" className="w-24 mx-auto md:mx-0 rounded-full" />
+        <div className="text-center">
+          <img src={Logo} alt="Ehal.Pt Logo" className="w-24 mx-auto md:mx-0 rounded-full" />
         </div>
 
         {/* Customer Service */}
