@@ -20,7 +20,7 @@ const MultiBanner = () => {
             <h2 className="text-lg md:text-xl font-semibold">
               Step Into Style - Explore Our Latest Collection!
             </h2>
-            <button className="mt-3 px-4 py-2 rounded-md bg-gray-200 text-gray-900 hover:bg-cyan-400 transition">
+            <button className="mt-3 px-4 py-2 rounded-md bg-cyan-600  hover:brightness-120 transform  duration-300  hover:scale-105 transition">
               Shop Now
             </button>
           </div>
@@ -45,10 +45,10 @@ const MultiBanner = () => {
             alt="Season Sale"
             className="w-full h-full object-cover "
           />
-          <div className="absolute inset-0 bg-gray-900/60 flex flex-col items-center justify-center text-white text-center p-4">
+          <div className="absolute inset-0 bg-gray-900/50 flex flex-col items-center justify-center text-white text-center p-4">
             <h2 className="text-lg md:text-2xl font-bold">Season Sale</h2>
             <p className="text-sm md:text-lg">Up to 70% Off</p>
-            <button className="mt-3 px-4 py-2 rounded-md bg-red-500 hover:bg-cyan-400 transition">
+            <button className="mt-3 px-4 py-2 rounded-md bg-cyan-600  hover:brightness-120 transform  duration-300  hover:scale-105 transition">
               Shop Now
             </button>
           </div>
@@ -63,7 +63,7 @@ const MultiBanner = () => {
           <div className="absolute inset-0 bg-gray-900/50 flex flex-col items-center justify-center text-white text-center p-4">
             <h2 className="text-2xl md:text-4xl font-bold">Season Sale</h2>
             <p className="text-sm md:text-lg">Up to 70% Off</p>
-            <button className="mt-3 px-4 py-2 rounded-md bg-red-500 hover:bg-cyan-600 transition">
+            <button className="mt-3 px-4 py-2 rounded-md bg-cyan-600 hover:brightness-120 transform  duration-300 hover:scale-105 transition">
               Browse Shoes
             </button>
           </div>

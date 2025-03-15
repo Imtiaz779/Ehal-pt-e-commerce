@@ -23,9 +23,9 @@ const Hero = () => {
       {/*  Banners */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6 px-4 md:px-12">
         {[
-          { img: img3, color: "bg-purple-700", text: "Shop Now" },
-          { img: img2, color: "bg-red-700", text: "Browse Products" },
-          { img: img4, color: "bg-blue-700", text: "Discover Deals" },
+          { img: img3, text: "Shop Now" },
+          { img: img2,  text: "Browse Products" },
+          { img: img4,  text: "Discover Deals" },
         ].map((item, index) => (
           <div
             key={index}
@@ -40,7 +40,7 @@ const Hero = () => {
               <h2 className="text-2xl font-semibold">Season Sale</h2>
               <p className="text-lg">Up to 70% Off</p>
               <button
-                className={`mt-3 px-4 py-2 rounded-md text-white ${item.color} hover:brightness-120 transform transition duration-300  hover:scale-105 `}
+                className='mt-3 px-4 py-2 rounded-md text-white bg-[#00BF83] hover:brightness-120 transform transition duration-300  hover:scale-105' 
               >
                 {item.text}
               </button>
