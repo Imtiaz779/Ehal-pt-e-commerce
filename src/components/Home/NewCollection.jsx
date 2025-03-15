@@ -59,7 +59,7 @@ const NewCollection = () => {
   ];
 
   return (
-    <div className="m-4">
+    <div className="m-4 overflow-hidden">
       <h2 className="text-4xl text-center font-bold">New Collection</h2>
       <p className="text-center text-gray-600 max-w-2xl mx-auto mt-2">
         Discover the latest arrivals and get the best deals on top-quality

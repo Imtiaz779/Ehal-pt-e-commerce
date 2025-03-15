@@ -8,7 +8,7 @@ import img5 from "@/assets/Products/phone.avif";
 const MultiBanner = () => {
   return (
     <div className="m-4 ">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {/* First Banner */}
         <div className="relative h-60 md:h-80 rounded-lg overflow-hidden  shadow-lg transform hover:scale-105 transition duration-300">
           <img

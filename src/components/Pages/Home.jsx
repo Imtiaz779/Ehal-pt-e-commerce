@@ -9,7 +9,7 @@ import Newsletter from "@/components/Home/Newsletter";
 
 export const Home = () => {
   return (
-    <div className="flex flex-col gap-10 max-w-full justify-center items-center">
+    <div className=" ">
       <Hero/>
       <MultiBanner/>
       <NewCollection/>

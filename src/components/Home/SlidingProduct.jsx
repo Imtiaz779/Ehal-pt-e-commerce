@@ -50,24 +50,24 @@ const SlidingProduct = () => {
       pagination={{ clickable: true }}
       className="w-full"
       breakpoints={{
-        1024: {
+        640: {
           slidesPerView: 3,
           spaceBetween: 30,
         },
-        640: {
+        480: {
           slidesPerView: 2,
           spaceBetween: 20,
         },
-        480: {
+        384: {
           slidesPerView: 1,
           spaceBetween: 10,
         },
       }}
     >
       {products.map((product) => (
-        <SwiperSlide>
+        <SwiperSlide  key={product.id}>
           <div
-            key={product.id}
+           
             className=" bg-white border border-gray-300 rounded-xl shadow-cyan-900 transform transition duration-200 ease-in-out  hover:shadow-xl hover:scale-105 mb-10 "
           >
             <figure className="w-full ">
