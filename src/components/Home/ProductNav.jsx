@@ -10,6 +10,7 @@ const ProductNav = () => {
 
       <div className="flex items-center justify-center">
         <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl my-4">Shop By Category</h1>
+        
       </div>
       <div className=" flex flex-wrap  justify-center gap-8">
         <a className="btn mt-4 transform transition duration-300 hover:scale-105 hover:bg-cyan-600 hover:text-white hover:shadow-lg">

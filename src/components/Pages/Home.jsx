@@ -6,6 +6,7 @@ import Benefits from "@/components/Home/Benefits";
 import ProductNav from "@/components/Home/ProductNav";
 import SlidingProduct from "@/components/Home/SlidingProduct";
 import Newsletter from "@/components/Home/Newsletter";
+import Popular from "../Home/Popular";
 
 export const Home = () => {
   return (
@@ -14,9 +15,11 @@ export const Home = () => {
       <ProductNav/>
       <SlidingProduct/>
       <MultiBanner/>
-      <Topbrand/>
+     
 
       <NewCollection/>
+      <Topbrand/>
+      <Popular/>
       <Benefits/>
      
       <Newsletter/>

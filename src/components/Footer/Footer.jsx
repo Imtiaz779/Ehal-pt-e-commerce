@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "@/assets/logo/birdlogo.webp";
+import Logo from "@/assets/logo/logo.webp";
 import {
   FaFacebook,
   FaInstagram,

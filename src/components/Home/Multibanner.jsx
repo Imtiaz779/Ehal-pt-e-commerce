@@ -1,6 +1,6 @@
 import React from "react";
 import img1 from "@/assets/hero/11.jpg";
-import img2 from "@/assets/hero/kafela.jpg";
+import img2 from "@/assets/hero/k.png";
 import img3 from "@/assets/hero/22.webp";
 import img4 from "@/assets/hero/33.jpg";
 import img5 from "@/assets/hero/sunset-desert-mosque.jpg";
@@ -8,13 +8,16 @@ import img5 from "@/assets/hero/sunset-desert-mosque.jpg";
 const MultiBanner = () => {
   return (
     <div className="m-4">
+      <div className="flex items-center justify-center">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold py-12">Discounted Products</h1>
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {/* First Banner */}
         <div className="relative h-60 md:h-80 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition duration-300">
           <img
             src={img1}
             alt="New Arrivals"
-            className="w-full h-full object-cover"
+            className="w-6/5 h-6/5 object-cover"
           />
           <div className="absolute inset-0 bg-gray-900/50 flex flex-col items-center justify-center text-white text-center p-4">
 <h1 className="font-bold text-2xl py-2">
@@ -33,11 +36,11 @@ const MultiBanner = () => {
           <img
             src={img2}
             alt="New Arrivals"
-            className="w-full h-full object-cover"
+            className="w-6/5 h-6/5  object-cover"
           />
           <div className="absolute inset-0 bg-gray-900/60 flex flex-col items-center justify-center text-white text-center p-4">
           <h1 className="font-bold text-2xl py-2">
-          Explore More Now
+          Choose Keffiyah
 </h1>   
             <p className="font-light">
               Find Your Perfect Product With Us <br /> New Arrivals!
@@ -52,7 +55,7 @@ const MultiBanner = () => {
           <img
             src={img3}
             alt="Season Sale"
-            className="w-full h-full object-cover"
+            className="w-6/5 h-6/5 object-cover"
           />
           <div className="absolute inset-0 bg-gray-900/50 flex flex-col items-center justify-center text-white text-center p-4">
           <h1 className="font-bold text-2xl py-2">
@@ -70,7 +73,7 @@ const MultiBanner = () => {
           <img
             src={img4}
             alt="Season Sale"
-            className="w-full h-full object-cover"
+            className="w-6/5 h-6/5  object-cover"
           />
           <div className="absolute inset-0 bg-gray-900/50 flex flex-col items-center justify-center text-white text-center p-4">
           <h1 className="font-bold text-2xl py-2">

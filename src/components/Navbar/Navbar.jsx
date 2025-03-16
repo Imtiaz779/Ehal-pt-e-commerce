@@ -4,7 +4,7 @@ import { FaRegHeart, FaUserCircle } from "react-icons/fa";
 import { LiaCartPlusSolid } from "react-icons/lia";
 import { Link, NavLink } from "react-router-dom";
 import { FaAngleDown } from "react-icons/fa6";
-import Logo from "@/assets/logo/birdlogo.webp";
+import Logo from "@/assets/logo/logo.webp";
 
 const Navbar = () => {
   const menuItems = [

@@ -118,7 +118,7 @@ const NewCollection = () => {
         Discover the latest arrivals and get the best deals on top-quality
         products.
       </p>
-      <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5 ` }>
+      <div className={`grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-5 mt-5 ` }>
         {new_collections.map((product) => (
           <div
             key={product.id}
