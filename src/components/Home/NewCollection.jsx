@@ -1,10 +1,16 @@
 import React from "react";
-import img1 from "@/assets/Products/phone.jpg";
-import img2 from "@/assets/Products/shoe.webp";
-import img3 from "@/assets/Products/bag.webp";
-import img4 from "@/assets/Products/sunglass.webp";
-import img5 from "@/assets/Products/jacket.jpg";
-import img6 from "@/assets/Products/watch.jfif";
+import img1 from "@/assets/hero/01.jfif";
+import img2 from "@/assets/hero/02.webp";
+import img3 from "@/assets/hero/03.jfif";
+import img4 from "@/assets/hero/04.jpg";
+import img5 from "@/assets/hero/33.jpg";
+import img6 from "@/assets/hero/06.webp";
+import img7 from "@/assets/hero/07.webp";
+import img8 from "@/assets/hero/08.webp";
+import img9 from "@/assets/hero/bluetoothspeaker.webp";
+import img10 from "@/assets/hero/backpack.jpg";
+
+
 
 const NewCollection = () => {
   let new_collections = [
@@ -56,20 +62,67 @@ const NewCollection = () => {
       new_price: 299.99,
       old_price: 399.99,
     },
+    {
+      id: 7,
+      name: "Leather Wallet",
+      category: "accessories",
+      image: img7,
+      new_price: 70.0,
+      old_price: 90.0,
+    },
+    {
+      id: 8,
+      name: "Wireless Earbuds",
+      category: "audio",
+      image: img8,
+      new_price: 50.0,
+      old_price: 75.0,
+    },
+    {
+      id: 9,
+      name: "Bluetooth Speaker",
+      category: "audio",
+      image: img9,
+      new_price: 99.99,
+      old_price: 120.0,
+    },
+    {
+      id: 10,
+      name: "Canvas Backpack",
+      category: "bags",
+      image: img10,
+      new_price: 40.0,
+      old_price: 60.0,
+    }, {
+      id: 11,
+      name: "Leather Wallet",
+      category: "accessories",
+      image: img7,
+      new_price: 70.0,
+      old_price: 90.0,
+    },
+    {
+      id: 12,
+      name: "Wireless Earbuds",
+      category: "audio",
+      image: img8,
+      new_price: 50.0,
+      old_price: 75.0,
+    },
   ];
 
   return (
     <div className="m-4 overflow-hidden">
-      <h2 className="text-4xl text-center font-bold">New Collection</h2>
-      <p className="text-center text-gray-600 max-w-2xl mx-auto mt-2">
+      <h2 className=" text-center font-bold text-3xl md:text-4xl lg:text-5xl my-8">New Collection</h2>
+      <p className="text-center text-gray-900 max-w-2xl mx-auto mt-2 text-lg">
         Discover the latest arrivals and get the best deals on top-quality
         products.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-5 ">
+      <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5 ` }>
         {new_collections.map((product) => (
           <div
             key={product.id}
-            className="border border-gray-300 rounded-lg overflow-hidden  hover:shadow-2xl shadow-gray-200 transform transition duration-300 hover:scale-105"
+            className="border border-gray-300 rounded-lg overflow-hidden  hover:shadow-2xl shadow-gray-200 transform transition duration-300 hover:scale-105 "
           >
             <img
               src={product.image}

@@ -11,12 +11,14 @@ export const Home = () => {
   return (
     <div className=" ">
       <Hero/>
-      <MultiBanner/>
-      <NewCollection/>
-      <Topbrand/>
-      <Benefits/>
       <ProductNav/>
       <SlidingProduct/>
+      <MultiBanner/>
+      <Topbrand/>
+
+      <NewCollection/>
+      <Benefits/>
+     
       <Newsletter/>
     </div>
   );

@@ -6,7 +6,6 @@ import { Link, NavLink } from "react-router-dom";
 import { FaAngleDown } from "react-icons/fa6";
 import Logo from "@/assets/logo/birdlogo.webp";
 
-
 const Navbar = () => {
   const menuItems = [
     { name: "Eid Collection", path: "/" },
@@ -20,23 +19,25 @@ const Navbar = () => {
     </NavLink>
   ));
 
-  const categoryItems = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6"].map(
-    (item, index) => (
-      <li key={index} className="hover:text-cyan-500 py-2 font-bold">
-        <a href="#">{item}</a>
-      </li>
-    )
-  );
+  const categoryItems = [
+    "Item 1",
+    "Item 2",
+    "Item 3",
+    "Item 4",
+    "Item 5",
+    "Item 6",
+  ].map((item, index) => (
+    <li key={index} className="hover:text-cyan-500 py-2 font-bold">
+      <a href="#">{item}</a>
+    </li>
+  ));
 
   return (
     <div className="fixed top-0 left-0 w-full bg-black backdrop-blur-lg text-white z-50 shadow-2xl ">
-
-
       <div className=" px-2 py-3 flex justify-between items-center">
-
-
+        <div className="lg:hidden "></div>
         {/* Logo & Mobile Menu */}
-        <div className="flex items-center">
+        <div className="flex justify-items-end">
           <div className="dropdown  lg:hidden">
             <label tabIndex={0} className="btn btn-ghost">
               <svg
@@ -70,11 +71,7 @@ const Navbar = () => {
 
           {/* Logo */}
           <Link to="/" className="flex items-center gap-1">
-            <img
-              src={Logo}
-              alt="logo"
-              className="w-10 rounded-full "
-            />
+            <img src={Logo} alt="logo" className="w-10 rounded-full " />
             E-commerce
           </Link>
         </div>
@@ -97,10 +94,33 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
+        <div className="hidden md:flex lg:flex space-x-6 text-black">
+          <label className="input">
+          <input type="search" className="" placeholder="Search" />
+            <svg
+              className="h-[1em] opacity-50"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            > <g
+            strokeLinejoin="round"
+            strokeLinecap="round"
+            strokeWidth="2.5"
+            fill="none"
+            stroke="currentColor"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.3-4.3"></path>
+          </g>
+             
+            </svg>
+            
+          
+          </label>
+        </div>
 
         {/* Icons Section */}
-       
-       <div className="flex items-center space-x-2">
+
+        <div className="flex justify-center items-center space-x-2">
           <FaRegHeart className="text-sm md:text-2xl hover:scale-120 hover:text-cyan-500 transition cursor-pointer" />
           <FaUserCircle className="hover:scale-120 hover:text-cyan-500 transition cursor-pointer text-sm md:text-xl" />
           <LiaCartPlusSolid className="hover:scale-120 hover:text-cyan-500 transition cursor-pointer text-sm md:text-xl" />
@@ -111,7 +131,7 @@ const Navbar = () => {
             <span className="text-sm ">Festival Offer</span>
           </div>
         </div>
-       
+        <div className="lg:hidden"></div>
       </div>
     </div>
   );
