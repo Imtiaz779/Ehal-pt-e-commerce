@@ -74,10 +74,10 @@ const Hero = () => {
                    alt={product.name}
                    className="relative w-full h-[350px] lg:h-[550px] bg-cover bg-center flex items-center justify-center "
                  />
-                  <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center text-white p-6">
-          <p className="text-lg md:text-xl font-bold">The Best</p>
-          <h1 className="text-3xl md:text-5xl font-bold">{product.name}</h1>
-          <p className="text-lg md:text-xl mt-2">{product.description}</p>
+                  <div className="absolute inset-0 bg-black/50 text-center text-white p-8">
+          <p className="text-lg md:text-xl font-bold ">The Best</p>
+          <h1 className="text-3xl md:text-5xl font-bold ">{product.name}</h1>
+          <p className="text-lg md:text-xl mt-2 p-4">{product.description}</p>
           <button className="btn btn-success mt-4 transform transition duration-300 hover:scale-105">Shop Now</button>
         </div>
                </figure>

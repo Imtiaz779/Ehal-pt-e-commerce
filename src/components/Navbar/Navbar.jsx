@@ -3,7 +3,7 @@ import { FiGift } from "react-icons/fi";
 import { FaRegHeart, FaUserCircle } from "react-icons/fa";
 import { LiaCartPlusSolid } from "react-icons/lia";
 import { Link, NavLink } from "react-router-dom";
-import { FaAngleDown } from "react-icons/fa6";
+
 import Logo from "@/assets/logo/logo.webp";
 
 const Navbar = () => {
@@ -20,24 +20,23 @@ const Navbar = () => {
   ));
 
   const categoryItems = [
-    "Item 1",
-    "Item 2",
-    "Item 3",
-    "Item 4",
-    "Item 5",
-    "Item 6",
-  ].map((item, index) => (
-    <li key={index} className="hover:text-cyan-500 py-2 font-bold">
-      <a href="#">{item}</a>
-    </li>
+    { name: "Eid Collection", path: "/" },
+    { name: "Men", path: "/men" },
+    { name: "Women", path: "/women" },
+    { name: "Kids", path: "/kids" },
+    { name: "Gift Voucher", path: "/gift" },
+  ].map((item) => (
+    <NavLink key={item.name} className="hover:text-cyan-500 py-2 font-bold">
+      <Link to="/"> {item.name}</Link>
+    </NavLink>
   ));
 
   return (
     <div className="fixed top-0 left-0 w-full bg-black backdrop-blur-lg text-white z-50 shadow-2xl ">
-      <div className=" px-2 py-3 flex justify-between items-center">
+      <div className=" px-2 py-3 flex justify-between items-center ">
         <div className="lg:hidden "></div>
         {/* Logo & Mobile Menu */}
-        <div className="flex justify-items-end">
+        <div className="flex justify-items-end gap-5">
           <div className="dropdown  lg:hidden">
             <label tabIndex={0} className="btn btn-ghost">
               <svg
@@ -59,13 +58,10 @@ const Navbar = () => {
               tabIndex={0}
               className="menu dropdown-content mt-5 shadow bg-gray-900 rounded-box w-48 text-white "
             >
-              {menuItems}
-              <li>
-                <details>
-                  <summary>Category</summary>
-                  <ul className="p-2 ">{categoryItems}</ul>
-                </details>
-              </li>
+     
+                  <ul className="p-2  flex flex-col">{categoryItems}</ul>
+           
+             
             </ul>
           </div>
 
@@ -79,20 +75,7 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden lg:flex space-x-6">
           {menuItems}
-          <div className="dropdown dropdown-hover">
-            <label
-              tabIndex={0}
-              className="cursor-pointer flex items-center justify-center gap-1"
-            >
-              Category <FaAngleDown />
-            </label>
-            <ul
-              tabIndex={0}
-              className="dropdown-content menu bg-black rounded-box w-48 p-2 shadow-lg"
-            >
-              {categoryItems}
-            </ul>
-          </div>
+   
         </div>
         <div className="hidden md:flex lg:flex space-x-6 text-black">
           <label className="input">

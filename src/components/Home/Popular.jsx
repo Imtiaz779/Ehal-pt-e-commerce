@@ -115,7 +115,7 @@ const Popular = () => {
   ];
 
   return (
-    <div className="m-4 overflow-hidden py-2">
+    <div className="m-4 overflow-hidden ">
       <h2 className=" text-center font-bold text-3xl md:text-4xl lg:text-5xl my-4">
         Popular Product
       </h2>

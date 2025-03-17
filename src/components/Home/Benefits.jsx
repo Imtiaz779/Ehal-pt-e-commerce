@@ -32,7 +32,7 @@ const benefits = [
 
 const Benefits = () => {
   return (
-    <div className="py-12 bg-gray-100">
+    <div className="py-12 ">
       <div className="container mx-auto text-center">
         <h2 className="text-4xl font-bold text-gray-800 mb-6">
           Why Shop With Us?
